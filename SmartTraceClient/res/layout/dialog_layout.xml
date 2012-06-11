@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/widget0"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		 >
+	<EditText android:id="@+id/txbFile" android:layout_width="fill_parent"
+		android:layout_height="40dp" android:hint="@string/path"
+		android:gravity="center_vertical" android:textSize="18sp"
+	>
+	</EditText>
+
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:background="#F0C0C0C0" android:gravity="center_horizontal">
+
+		<Button android:id="@+id/btnOk" android:layout_width="80dp"
+			android:layout_height="46dp" android:text="@string/ok">
+		</Button>
+		<Button android:id="@+id/btnCancel" android:layout_width="80dp"
+			android:layout_height="46dp" android:text="@string/cancel" >
+		</Button>
+		<Button android:id="@+id/btnBrowse" android:layout_width="80dp"
+			android:layout_height="46dp" android:text="@string/browse" >
+		</Button>
+	</LinearLayout>
+	
+</LinearLayout>

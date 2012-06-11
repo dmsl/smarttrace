@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Smart Trace</string>
+	<string name="parentDir">..</string>
+	<string name="homeDir">.</string>
+	<string name="path">path</string>
+	<string name="sdcard">/sdcard/</string>
+	<string name="wifiPath">sdcard/wifi.txt</string>
+	<string name="gpsPath">sdcard/wifi.txt</string>
+	<string name="wifiE">5</string>
+	<string name="gpsE">0.001</string>
+	<string name="topK">1</string>
+	<string name="wifiPort">443</string>
+	<string name="gpsPort">80</string>
+	<string name="ip">194.42.16.33</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="browse">Browse</string>
+</resources>

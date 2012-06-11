@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="@string/app_name">
+	<PreferenceCategory android:title="Online mode:select trace from file"
+		android:key="wOnCategory">
+		<CheckBoxPreference android:title="Online (Wifi) mode"
+			android:key="OnWifi" android:defaultValue="true"
+			android:summary="Select it if you want to use Wifi" />
+		<CheckBoxPreference android:title="Append to trace"
+			android:key="wAppend" android:defaultValue="false"
+			android:summary="Append coordinates to trace" />
+		<EditTextPreference android:summary="Wifi output file location"
+			android:key="wOutpFile" android:title="Output File"
+			android:defaultValue="@string/wifiPath"></EditTextPreference>
+		<smarttrace.settings.SeekBarPreference
+			android:dependency="OnWifi" android:key="wDensity"
+			android:defaultValue="3" android:title="Wifi\nRefresh rate"
+			android:summary="Choose the Refresh rate of Wifi that satisfied" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Offline mode:select trace from Wifi"
+		android:key="wOffCategory">
+		<CheckBoxPreference android:title="Offline (Wifi) mode"
+			android:defaultValue="false" android:key="OffWifi"
+			android:summary="Select it if you want to use traces" />
+		<Preference android:key="wCustFile" android:title="Input File"
+			android:summary="Wifi-ready input file location">
+		</Preference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Connection Settings: Conection's Details">
+
+		<EditTextPreference android:title="Server Address"
+			android:key="wserverAdd" android:summary="The IP address of the server"
+			android:defaultValue="@string/ip"></EditTextPreference>
+		<EditTextPreference android:title="Server Port"
+			android:key="wserverPort" android:summary="The port of the server"
+			android:defaultValue="@string/wifiPort"></EditTextPreference>
+
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Query Settings: Set the criteria of the Query"
+		android:key="wOffCategory">
+		<EditTextPreference android:key="wepsilon"
+			android:title="Epsilon" android:summary="The epsilon value for envelope"
+			android:defaultValue="@string/wifiE"></EditTextPreference>
+		<EditTextPreference android:key="wparK"
+			android:title="Parameter K" android:summary="The k parameter for the smart trace"
+			android:defaultValue="@string/topK"></EditTextPreference>
+	</PreferenceCategory>
+</PreferenceScreen>

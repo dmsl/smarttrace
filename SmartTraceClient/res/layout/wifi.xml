@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<smarttrace.core.PopUp android:id="@+id/popupWifiwindow"
+			android:orientation="vertical" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:padding="1px" android:background="#A0000000">
+			<TextView android:id="@+id/txtTitle" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Title"
+				android:typeface="serif" android:textStyle="bold" android:textColor="#ffffffff"
+				android:layout_x="0px" android:layout_y="0px">
+			</TextView>
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="wrap_content" android:layout_weight="10"
+				android:layout_height="fill_parent">
+				<Button android:id="@+id/btnWOk" android:layout_width="100dip"
+					android:layout_height="50dip" android:text="ok">
+				</Button>
+				<Button android:id="@+id/btnWCancel" android:layout_width="100dip"
+					android:layout_height="50dip" android:text="Cancel">
+				</Button>
+			</LinearLayout>
+		</smarttrace.core.PopUp>
+
+		<Button android:id="@+id/ppWifibutton" android:layout_width="42px"
+			android:layout_height="42px" android:background="@drawable/selectorleft"
+			android:layout_y="200dip"></Button>
+		<smarttrace.core.PopUp android:id="@+id/popupWifiText"
+			android:orientation="vertical" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:padding="5px" android:background="#A0000000">
+			<TextView android:id="@+id/txtTitle" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="This graph shows the RSS strengh"
+				android:shadowColor="#00ccff" android:textStyle="bold"
+				android:layout_x="0px" android:layout_y="0px" android:shadowDx="1"
+				android:shadowDy="1" android:shadowRadius="3">
+			</TextView>
+		</smarttrace.core.PopUp>
+		<Button android:id="@+id/btnWifiClose" android:layout_width="42px"
+			android:layout_height="42px" android:background="@drawable/close"
+			android:layout_y="200dip"></Button>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content" android:id="@+id/wifiLayout"
+		android:orientation="vertical" android:layout_height="wrap_content">
+	</LinearLayout>
+</LinearLayout>

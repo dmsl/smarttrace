@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="Privacy:Privacy Options"
+		android:key="Privacy">
+		<EditTextPreference android:key="usrName"
+			android:title="Screen name" android:summary="Your Screen name"></EditTextPreference>
+
+		<CheckBoxPreference android:title="Share Trajectory"
+			android:defaultValue="false"
+			android:summary="Check this if you don't want to share your trajectory"
+			android:key="PrivacyTraj" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:id="@+id/mainABSLayout" android:fitsSystemWindows="true">
+	<com.google.android.maps.MapView
+		android:id="@+id/mapview" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:enabled="true"
+		android:clickable="true" 	android:apiKey="0EEkzHi9atzcweHAhrw5Qsenwr405wa1jS1wDuQ" />
+
+	<!--
+		Phone Key android:apiKey="0EEkzHi9atzcVvXth-BNZevkEbtvbrtwu2wOoIw" />
+	-->
+	<!--
+		Eclipse Ubuntu Key
+		android:apiKey="0EEkzHi9atzcweHAhrw5Qsenwr405wa1jS1wDuQ"/>
+	-->
+	<!--
+		Eclipse Windows Key
+		android:apiKey="0EEkzHi9atzequHW3K7gZyEyMnSy2Iw2obdONMg"/>
+	-->
+
+	<ImageButton android:id="@+id/btnHome"
+		android:layout_width="75dip" android:layout_height="75dip"
+		android:layout_x="-7dip" android:layout_y="1dip" android:background="@drawable/home">
+	</ImageButton>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="20dip" android:text="Home" android:typeface="serif"
+		android:textStyle="bold" android:layout_x="10dip" android:layout_y="62dip"
+		android:textColor="#c20000">
+	</TextView>
+	<ImageButton android:id="@+id/btnCol" android:layout_width="75dip"
+		android:layout_height="75dip" android:layout_x="121dip"
+		android:layout_y="1dip" android:background="@drawable/color">
+	</ImageButton>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="20dip" android:text="Color" android:typeface="serif"
+		android:textStyle="bold" android:layout_x="140dip" android:layout_y="62dip"
+		android:textColor="#c20000">
+	</TextView>
+	<ImageButton android:id="@+id/btnWid" android:layout_width="75dip"
+		android:layout_height="75dip" android:layout_marginTop="2dip"
+		android:layout_marginBottom="2dip" android:layout_marginLeft="2dip"
+		android:layout_marginRight="2dip" android:layout_x="57dip"
+		android:layout_y="1dip" android:background="@drawable/width1">
+	</ImageButton>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="20dip" android:text="Width" android:typeface="serif"
+		android:textStyle="bold" android:layout_x="75dip" android:layout_y="62dip"
+		android:textColor="#c20000">
+	</TextView>
+	<ImageButton android:id="@+id/btnPin" android:layout_width="75dip"
+		android:layout_height="75dip" android:layout_x="185dip"
+		android:layout_y="1dip" android:background="@drawable/thumbtack">
+	</ImageButton>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="20dip" android:text="Pin" android:typeface="serif"
+		android:textStyle="bold" android:layout_x="210dip" android:layout_y="62dip"
+		android:textColor="#c20000">
+	</TextView>
+	<ImageButton android:id="@+id/btnNext"
+		android:layout_width="75dip" android:layout_height="75dip"
+		android:layout_x="245dip" android:layout_y="1dip" android:background="@drawable/next">
+	</ImageButton>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="20dip" android:text="Next" android:typeface="serif"
+		android:textStyle="bold" android:layout_x="265dip" android:layout_y="62dip"
+		android:textColor="#c20000">
+	</TextView>
+	<ImageButton android:id="@+id/btnclose"
+		android:layout_width="65dip" android:layout_height="65dip"
+		android:layout_x="245dip" android:layout_y="355dip" android:background="@drawable/close">
+	</ImageButton>
+
+		<!--  <SmartTrace.apk.PopUp-->
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content" android:layout_weight="10"
+			android:layout_height="fill_parent" android:layout_y="200dip">
+	<smarttrace.core.PopUp
+		android:id="@+id/popupGpswindow" android:orientation="vertical"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:gravity="center" android:padding="1px" android:background="#A0000000" >
+		<TextView android:id="@+id/txtTitle" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Title"
+			android:typeface="serif" android:textStyle="bold" android:textColor="#ffffffff"
+			android:layout_x="0px" android:layout_y="0px">
+		</TextView>
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content" android:layout_weight="10"
+			android:layout_height="fill_parent">
+			<Button android:id="@+id/btnOk" android:layout_width="100dip"
+				android:layout_height="50dip" android:text="ok">
+			</Button>
+			<Button android:id="@+id/btnCancel" android:layout_width="100dip"
+				android:layout_height="50dip" android:text="Cancel">
+			</Button>
+		</LinearLayout>
+	</smarttrace.core.PopUp>
+
+		<Button android:id="@+id/show_popup_button"
+			android:layout_width="42px" android:layout_height="42px"
+			android:background="@drawable/selectorleft" android:layout_y="200dip"></Button>
+				</LinearLayout>
+</AbsoluteLayout>

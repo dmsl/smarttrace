@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/SmrtTrc" android:title="Smart Trace"></item>
+<item android:id="@+id/OnOff" android:title="Online/Offline"></item>
+<item android:id="@+id/Cons" android:title="Console"></item>
+<item android:id="@+id/mapMode" android:title="Map Mode"></item>
+<item android:id="@+id/preferences" android:title="Preferences"></item>
+<item android:id="@+id/more" android:title="More ..."></item>
+<item android:id="@+id/record" android:title="Record"></item>
+<item android:id="@+id/Share" android:title="Share"></item>
+</menu>

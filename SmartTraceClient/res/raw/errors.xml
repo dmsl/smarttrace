@@ -1,0 +1,31 @@
+
+<errors>
+	<error>
+		<number>0</number>
+		<description>Internal Error</description>
+	</error>
+	<error>
+		<number>401</number>
+		<description>Authentication Failed</description>
+	</error>
+	<error>
+		<number>511</number>
+		<description>Server Busy</description>
+	</error>
+	<error>
+		<number>512</number>
+		<description>None Client is calculating</description>
+	</error>
+	<error>
+		<number>513</number>
+		<description>You are the only online user. The system requires at least 2 connections to operate</description>
+	</error>
+	<error>
+		<number>514</number>
+		<description>Wrong format of UpperBound</description>
+	</error>
+		<error>
+		<number>515</number>
+		<description>Wrong format of UpperBound</description>
+	</error>
+</errors>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="@string/app_name">
+	<PreferenceCategory android:title="Online mode:select trace from file"
+		android:key="OnCategory">
+		<CheckBoxPreference android:title="Online (GPS) mode"
+			android:key="OnGps" android:summary="Select it if you want to use GPS" android:defaultValue="false"/>
+		<CheckBoxPreference android:title="Append to trace"
+			android:key="Append" android:defaultValue="false"
+			android:summary="Append coordinates to trace" />
+		<EditTextPreference android:summary="GPS output file location"
+			android:key="outpFile" android:title="Output File"
+			android:defaultValue="@string/gpsPath"></EditTextPreference>
+		<smarttrace.settings.SeekBarPreference
+			android:dependency="OnGps" android:key="Density"
+			android:defaultValue="3" android:title="GPS\nGranularity"
+			android:summary="Choose the granularity of GPS that satisfied" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Offline mode:select trace from GPS"
+		android:key="OffCategory">
+		<CheckBoxPreference android:title="Offline (GPS) mode"
+			android:key="OffGps"
+			android:summary="Select it if you want to use traces" android:defaultValue="true"/>
+		<Preference android:key="custFile" android:title="Input File"
+			android:summary="GPS-ready input file location">
+		</Preference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Connection Settings: Conection's Details">
+
+		<EditTextPreference android:title="Server Address"
+			android:key="serverAdd" android:summary="The IP address of the server"
+			android:defaultValue="@string/ip"></EditTextPreference>
+		<EditTextPreference android:title="Server Port"
+			android:key="serverPort" android:summary="The port of the server"
+			android:defaultValue="@string/gpsPort"></EditTextPreference>
+
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Query Settings: Set the criteria of the Query"
+		android:key="OffCategory">
+		<EditTextPreference android:key="epsilon"
+			android:title="Epsilon" android:summary="The epsilon value for envelope"
+			android:defaultValue="@string/gpsE"></EditTextPreference>
+		<EditTextPreference android:key="parK"
+			android:title="Parameter K" android:summary="The k parameter for the smart trace"
+			android:defaultValue="@string/topK"></EditTextPreference>
+	</PreferenceCategory>
+</PreferenceScreen>

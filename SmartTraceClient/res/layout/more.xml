@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/widget33"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<Button android:id="@+id/clear" android:layout_width="75dip"
+		android:layout_height="75dip" 
+		android:textStyle="bold" android:layout_x="0px" android:layout_y="5px">
+	</Button>
+	<Button android:id="@+id/mode" android:layout_width="75dip"
+		android:layout_height="75dip" 
+		android:textStyle="bold" android:layout_y="5px" android:layout_x="120px">
+	</Button>
+	<TextView android:id="@+id/textView" android:layout_height="wrap_content"
+		android:layout_width="306px" android:maxHeight="319px"
+		android:layout_x="6px" android:layout_y="65px">
+	</TextView>
+	<Button android:id="@+id/back" android:layout_width="50dip"
+		android:layout_height="50dip"  android:textStyle="bold"
+		android:layout_x="240px" android:layout_y="365px">
+	</Button>
+	<Button android:id="@+id/about" android:layout_width="75dip"
+		android:layout_height="75dip"  android:textStyle="bold"
+		android:layout_x="0px" android:layout_y="365px">
+	</Button>
+
+
+	<Button android:id="@+id/btncon" android:layout_width="75dip"
+		android:layout_height="75dip" android:layout_x="240px"
+		android:layout_y="2px">
+	</Button>
+</AbsoluteLayout>
